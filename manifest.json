@@ -1,7 +1,7 @@
 {
   "name": "cortex-plugin-payment-gateway",
-  "version": "1.0.0",
-  "description": "Payment Gateway Orchestrator — Route payments through optimal gateway (Stripe/Braintree/Adyen/Checkout.com) based on success rate, fees, and region",
+  "version": "1.0.1",
+  "description": "Payment Gateway Orchestrator \u2014 Route payments through optimal gateway (Stripe/Braintree/Adyen/Checkout.com) based on success rate, fees, and region",
   "kind": "esm",
   "entryPoint": "mod.ts",
   "runtime": "deno",
@@ -9,7 +9,10 @@
   "license": "MIT",
   "repository": "https://github.com/CortexPrism/cortex-plugin-payment-gateway",
   "homepage": "https://cortexprism.io/marketplace/plugins/payment-gateway",
-  "capabilities": ["tools", "network:fetch"],
+  "capabilities": [
+    "tools",
+    "network:fetch"
+  ],
   "tools": [
     {
       "name": "payments_process",
@@ -33,6 +36,13 @@
     }
   ],
   "dependencies": {},
-  "peerDependencies": { "cortex": ">=1.0.0" },
-  "aiDisclosure": { "tools": ["Kilo (DeepSeek) — batch scaffold"], "humanReview": true }
+  "peerDependencies": {
+    "cortex": ">=0.51.0"
+  },
+  "aiDisclosure": {
+    "tools": [
+      "Kilo (DeepSeek) \u2014 batch scaffold"
+    ],
+    "humanReview": true
+  }
 }
